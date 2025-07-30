@@ -22,3 +22,17 @@ class HelloWorld {
     
   }
 }
+// or
+
+using System;
+class HelloWorld {
+  static void Main() {
+      string str = "hello world";
+      
+      int l = str.Length;
+      for(int i=l-1;i>=0;i--){
+          Console.Write(str[i] + " ");
+      } 
+    
+  }
+}
