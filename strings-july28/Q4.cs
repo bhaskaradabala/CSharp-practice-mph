@@ -12,12 +12,29 @@ also, both strings are equal.
 using System;
 class HelloWorld {
   static void Main() {
-      string str = "hello world";
+      string str1 = "hello world";
+      string str2 = "hello world";
+      bool flag= true;
+      int l1 = str1.Length;
+      int l2 = str2.Length;
+      if(l1==l2) {
+          for(int i=0; i<l1; i++){
+              if(str1[i]!=str2[i]){
+                  flag = false;
+                  break;
+              }
+          
+      }
+      }
+      else{
+          flag = false;
+      }
       
-      int l = str.Length;
-      for(int i=l-1;i>=0;i--){
-          Console.Write(str[i] + " ");
-      } 
-    
+      if(l1==l2 && flag){
+          Console.WriteLine("Given Strings are same.");
+      }
+      else{
+          Console.WriteLine("Given Strings are not same.");
+      }
   }
 }
